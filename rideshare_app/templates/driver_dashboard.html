@@ -1,0 +1,46 @@
+<!-- driver_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .dashboard-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .dashboard-links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Driver Dashboard</h2>
+        <div class="dashboard-links">
+            <a href="{{ url_for('driver.post_ride') }}">Post a Ride</a>
+            <a href="{{ url_for('driver.ride_requests') }}">View Ride Requests</a>
+            <a href="{{ url_for('driver.logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

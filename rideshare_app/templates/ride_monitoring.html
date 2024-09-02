@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ride Monitoring</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesr.css') }}">
+   
+</head>
+<body>
+    <h1>Ride Monitoring</h1>
+    
+    <h2>Alerts</h2>
+    <ul>
+        {% for alert in alerts %}
+            <li>{{ alert }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Active Rides</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ride ID</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Seats Available</th>
+                <th>Driver</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ride in active_rides %}
+                <tr>
+                    <td>{{ ride.ride_id }}</td>
+                    <td>{{ ride.destination }}</td>
+                    <td>{{ ride.date }}</td>
+                    <td>{{ ride.time }}</td>
+                    <td>{{ ride.seats_available }}</td>
+                    <td>{{ ride.driver.username }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>User Activities</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in user_activities %}
+                <tr>
+                    <td>{{ user.user_id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.role }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

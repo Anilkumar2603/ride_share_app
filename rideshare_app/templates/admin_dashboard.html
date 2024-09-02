@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('admin.dashboard') }}">Home</a>
+        <a href="{{ url_for('admin.user_management') }}">User Management</a>
+        <a href="{{ url_for('admin.ride_monitoring') }}">Ride Monitoring</a>
+        <a href="{{ url_for('admin.reports') }}">Reports</a>
+        <a href="{{ url_for('admin.issue_management') }}">Issue Management</a>
+        <a href="{{ url_for('admin.policy_management') }}">Policy Management</a>
+        <a href="{{ url_for('admin.logout') }}">Logout</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3>User Management</h3>
+            <a href="{{ url_for('admin.user_management') }}">Manage Users</a>
+        </div>
+        <div class="card">
+            <h3>Ride Monitoring</h3>
+            <a href="{{ url_for('admin.ride_monitoring') }}">Monitor Rides</a>
+        </div>
+        <div class="card">
+            <h3>Reports</h3>
+            <a href="{{ url_for('admin.reports') }}">View Reports</a>
+        </div>
+        <div class="card">
+            <h3>Issue Management</h3>
+            <a href="{{ url_for('admin.issue_management') }}">Manage Issues</a>
+        </div>
+        <div class="card">
+            <h3>Policy Management</h3>
+            <a href="{{ url_for('admin.policy_management') }}">Manage Policies</a>
+        </div>
+    </div>
+</body>
+</html>

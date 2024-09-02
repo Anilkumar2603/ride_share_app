@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Ride</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .request-ride-container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="request-ride-container">
+        <h2>Request a Ride</h2>
+        <form action="{{ url_for('rider.request_ride') }}" method="POST">
+            <select name="ride_id" required>
+                <option value="" disabled selected>Select a ride</option>
+                {% for ride in available_rides %}
+                <option value="{{ ride.ride_id }}">{{ ride.destination }} on {{ ride.date }} at {{ ride.time }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Request Ride</button>
+        </form>
+    </div>
+</body>
+</html>

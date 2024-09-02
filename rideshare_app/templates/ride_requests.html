@@ -1,0 +1,64 @@
+<!-- ride_requests.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .ride-requests-container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .request-item {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .request-item form {
+            display: inline;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="ride-requests-container">
+        <h2>Ride Requests</h2>
+        {% for request in ride_requests %}
+        <div class="request-item">
+            <p>Rider: {{ request.rider.username }}</p>
+            <p>Requested Ride: {{ request.ride.destination }} on {{ request.ride.date }} at {{ request.ride.time }}</p>
+            <form action="{{ url_for('driver.ride_requests') }}" method="POST">
+                <input type="hidden" name="request_id" value="{{ request.request_id }}">
+                <button type="submit" name="action" value="approve">Approve</button>
+                <button type="submit" name="action" value="reject">Reject</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

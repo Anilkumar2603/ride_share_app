@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rider Dashboard</h1>
+        
+        <!-- Upcoming Rides Section -->
+        <h2>Upcoming Rides</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Driver</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Seats Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ride in upcoming_rides %}
+                <tr>
+                    <td>{{ ride.driver.username }}</td>
+                    <td>{{ ride.destination }}</td>
+                    <td>{{ ride.date }}</td>
+                    <td>{{ ride.time }}</td>
+                    <td>{{ ride.seats_available }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Navigation Links -->
+        <a href="{{ url_for('rider.search_ride') }}">Search for a Ride</a>
+        <a href="{{ url_for('rider.request_ride') }}">Request for a Ride</a>
+        <a href="{{ url_for('rider.provide_feedback') }}">Provide Feedback</a>
+        <a href="{{ url_for('rider.logout') }}">Logout</a>
+    </div>
+</body>
+</html>

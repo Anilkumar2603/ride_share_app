@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RideShare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .secret-zone {
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #ffc107;
+            border-radius: 5px;
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .secret-zone a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to RideShare</h1>
+        <p>Select your role to log in:</p>
+        <ul>
+            <li><a href="{{ url_for('rider.login') }}">Rider Login</a></li>
+            <li><a href="{{ url_for('driver.login') }}">Driver Login</a></li>
+        </ul>
+        <!-- Secret admin access -->
+        <div class="secret-zone">
+            <p>Hint: If you know the secret, you can access the admin login page.</p>
+            <p><a href="{{ url_for('main.secret_admin_access') }}">Admin Access (Secret)</a></p>
+        </div>
+    </div>
+</body>
+</html>

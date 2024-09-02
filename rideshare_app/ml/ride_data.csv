@@ -1,0 +1,101 @@
+ride_id,destination,date,time,driver_rating,seats_available,car_type,driver_name
+1,Lake Gailmouth,2024-04-03,08:13:36,4.89,1,Van,Kathleen Jimenez
+2,Tiffanyfort,2024-03-24,05:00:16,3.23,3,Sedan,Rita Mitchell
+3,South Barry,2024-08-02,18:38:01,4.18,4,SUV,Allison Walsh
+4,Jenniferfort,2024-08-26,19:06:44,3.55,4,Hatchback,Catherine Robertson
+5,Alexandermouth,2024-03-27,01:40:27,3.73,3,Van,Eric Johnson
+6,Racheltown,2024-04-24,23:32:51,3.93,4,Hatchback,Sandra Campbell
+7,Oliverton,2024-01-03,12:10:09,4.64,2,Van,Troy Bryant
+8,New Kenneth,2024-04-06,14:45:34,4.17,1,Hatchback,Theresa Conrad
+9,North Richardstad,2024-03-17,12:58:24,3.15,2,SUV,William Acosta
+10,Rodriguezstad,2024-07-06,23:05:53,3.94,3,SUV,David Price
+11,Dylanbury,2024-01-25,21:30:24,4.83,2,Van,Brandon Stewart DDS
+12,North Rodneyfort,2024-07-07,19:49:52,3.2,1,SUV,Paul King
+13,Wesleybury,2024-04-10,01:27:32,3.1,4,SUV,Matthew Weiss
+14,Lake Sierra,2024-06-12,04:25:22,4.1,1,Hatchback,Angel Simpson
+15,Stanleyland,2024-02-12,22:10:01,4.85,3,Sedan,Dale Blevins
+16,New Michael,2024-07-05,12:17:26,4.57,3,Hatchback,Kurt Ward
+17,Hortonchester,2024-08-18,04:20:14,3.05,3,Sedan,Mrs. Lindsay Johnson MD
+18,North Robert,2024-02-09,03:59:26,3.03,2,Sedan,Mr. Christopher Scott
+19,Jamesmouth,2024-05-05,02:53:27,4.64,2,Van,Christina Robinson
+20,Lake Stacy,2024-01-03,16:58:20,4.74,1,Sedan,Christopher Collins
+21,Kennethshire,2024-01-06,12:47:10,3.99,1,Van,Jeffrey Clayton
+22,South Charlesmouth,2024-04-18,03:11:01,4.37,2,Sedan,Ryan Moran
+23,South William,2024-07-08,02:02:19,3.77,3,Van,Colin Jenkins
+24,South Zoe,2024-02-17,02:52:01,4.18,3,Van,Nicole Smith
+25,Port Teresa,2024-01-31,16:39:32,3.08,2,SUV,David Prince
+26,Nicoleborough,2024-02-22,06:02:42,3.75,3,Van,John Smith
+27,North Alexander,2024-05-11,11:44:34,3.57,3,SUV,Jessica Harris
+28,Kiddburgh,2024-04-10,13:43:18,4.75,4,Van,Christopher Kelley
+29,South Richard,2024-06-01,07:39:59,4.46,4,SUV,Jason Miller
+30,West Kevin,2024-05-25,22:32:39,3.94,4,Van,Joseph Johnson
+31,Scottbury,2024-04-27,05:13:05,4.2,3,Van,David Fleming
+32,East Charles,2024-03-01,11:54:43,3.29,4,Van,Christopher Schmidt
+33,Matthewchester,2024-06-06,19:46:05,3.93,3,Hatchback,Sandra Stanley DVM
+34,Howardmouth,2024-02-03,20:02:57,3.13,3,Sedan,Amy Rivera
+35,Blackwellberg,2024-04-10,09:04:24,4.94,1,Hatchback,Louis Mitchell
+36,Darlenefurt,2024-07-24,22:50:51,4.95,1,SUV,Vanessa Abbott
+37,Vickiemouth,2024-03-24,21:45:27,3.35,3,SUV,Gloria Sanchez
+38,Martinside,2024-07-18,20:50:47,3.53,2,Hatchback,Clayton Martinez
+39,Christineland,2024-01-14,04:40:41,4.16,3,Van,Amy Hart DDS
+40,South Kristin,2024-08-19,06:44:40,4.14,2,Van,Philip Harrison
+41,East Brian,2024-02-01,19:15:49,3.88,3,Hatchback,Angel Bush
+42,North Sarah,2024-05-17,12:21:14,4.48,3,Sedan,James Ward
+43,South Brittany,2024-06-17,23:22:23,4.42,3,SUV,Patricia Ray
+44,Hickstown,2024-06-16,04:22:45,3.33,3,Van,Daniel Mitchell
+45,North Jillian,2024-02-03,09:29:00,3.59,4,SUV,Wayne Pratt
+46,Williamshaven,2024-05-09,04:59:15,3.41,2,Sedan,Jeffrey Lynn
+47,New Maureenmouth,2024-07-18,11:08:53,4.33,2,Sedan,Gregory Barry
+48,Jamieburgh,2024-03-23,12:13:37,4.82,4,Sedan,Timothy Garcia
+49,Trujilloland,2024-05-20,01:09:05,3.32,1,Van,Tricia Rodriguez
+50,South Tracybury,2024-02-20,19:35:01,3.14,4,Van,David Harvey
+51,Gregorymouth,2024-01-09,06:04:39,3.87,3,Sedan,Amber Whitney
+52,North Troymouth,2024-02-01,00:52:42,4.0,2,Sedan,Michael Williams
+53,Johnside,2024-03-26,14:15:24,4.3,1,Van,Ronald Jackson
+54,Curryshire,2024-04-12,11:40:47,4.8,1,SUV,Michelle Walker
+55,Susanfurt,2024-07-30,01:03:59,4.08,1,Sedan,Courtney Garcia
+56,West Scotthaven,2024-02-06,16:12:41,3.95,2,SUV,Stephen Wilson
+57,Karenshire,2024-06-27,15:10:32,3.55,2,Hatchback,Alyssa Carey
+58,Emmamouth,2024-05-13,16:33:51,3.11,4,Van,Elizabeth Wong
+59,Ballborough,2024-08-01,23:57:04,3.66,2,Van,Steven Long
+60,Lake Christopher,2024-01-31,18:57:22,3.13,1,Hatchback,Anthony Tyler
+61,New Johnhaven,2024-07-03,14:09:20,4.25,3,Hatchback,Jeffrey Davis
+62,New Lorraine,2024-03-14,21:20:09,4.04,1,SUV,Charles Scott
+63,Lake Lindabury,2024-02-04,23:46:06,4.14,4,Van,John Reilly
+64,Port Maria,2024-06-27,09:44:37,3.77,1,Sedan,Darren Martinez
+65,North Amber,2024-07-24,22:46:33,4.1,3,Hatchback,Amanda Valdez
+66,Lake Vincentview,2024-08-22,12:27:21,3.18,4,Hatchback,Robert Fernandez
+67,Markberg,2024-05-14,12:20:06,4.79,2,Sedan,Adam Mckee
+68,Warrenchester,2024-06-27,19:57:47,3.4,4,SUV,Melanie Robinson
+69,Debraberg,2024-06-08,14:27:46,4.7,4,Hatchback,Susan Hopkins
+70,South Michael,2024-07-03,16:13:45,4.22,3,Van,Mark Patton
+71,Colinmouth,2024-07-11,19:18:53,3.99,4,Van,Elizabeth Fox
+72,Gallaghershire,2024-07-31,20:55:06,3.77,4,Hatchback,Joshua Lucas
+73,Mckeefort,2024-02-14,15:11:58,4.57,4,Sedan,Andrew Gutierrez
+74,East Matthewside,2024-05-15,09:35:59,4.33,4,Sedan,Emma Gibson
+75,Robertshire,2024-04-02,19:41:32,3.62,1,SUV,Brittney Garza
+76,North Brandon,2024-08-23,11:07:48,4.01,3,Sedan,Terry Shaw
+77,Christinaside,2024-04-07,02:04:36,4.47,3,Van,Cameron Nolan
+78,Lake Jeffreyland,2024-04-07,09:29:36,4.73,3,Hatchback,Christina Parrish
+79,Jamesfort,2024-05-07,01:16:37,4.35,2,Van,Tanner Bowman
+80,Lake Annamouth,2024-04-21,14:51:01,3.24,2,Van,Chad Crawford
+81,Aguilarberg,2024-03-15,18:48:47,3.51,4,Hatchback,Elizabeth Burns
+82,Port Brittanystad,2024-08-10,05:11:32,4.45,1,Hatchback,Julian Cervantes
+83,South Danielberg,2024-05-20,08:06:02,4.19,2,Van,Michelle Grant
+84,Aliciabury,2024-01-28,05:20:27,3.49,3,Hatchback,Rebecca Goodman
+85,Lake Jameshaven,2024-07-29,02:04:21,3.15,4,Hatchback,Anna Chang
+86,North Crystalfurt,2024-03-26,03:39:50,3.93,2,Sedan,Vincent Dixon
+87,East Monicaport,2024-01-12,22:54:36,4.95,2,Van,Jessica Tyler
+88,East Justin,2024-03-12,16:31:12,3.78,2,SUV,Gregory Kim
+89,East Williamborough,2024-08-03,16:41:31,3.58,1,SUV,Alyssa Hammond DDS
+90,Farleyfurt,2024-05-19,08:50:33,3.56,3,Hatchback,Michael Macdonald
+91,New Danielside,2024-05-20,05:52:04,3.56,4,Sedan,Beverly Williams
+92,Christopherfurt,2024-01-08,03:57:33,3.0,4,Hatchback,Derek Webster
+93,Lake Thomas,2024-06-21,12:37:08,3.35,3,SUV,Janice Medina
+94,West Taylor,2024-07-27,09:41:19,4.23,1,SUV,Kevin Garcia
+95,Armstrongstad,2024-07-07,19:16:35,4.49,2,Hatchback,Wesley Dawson
+96,Port Jeffrey,2024-01-11,10:09:47,4.54,3,SUV,Philip Bailey
+97,Fernandezstad,2024-05-14,06:50:23,4.97,2,Sedan,Ms. Kathleen Lloyd
+98,North Jesseville,2024-08-14,16:22:56,4.31,1,Sedan,Rachel Howard
+99,Port Sandrabury,2024-07-23,08:18:45,4.54,3,Sedan,Timothy Knapp
+100,Lake Tiffany,2024-03-12,20:49:01,4.19,4,Van,Mary Fischer

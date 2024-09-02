@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Provide Feedback</h1>
+        <form method="POST" action="{{ url_for('rider.provide_feedback') }}">
+            <label for="ride_id">Ride ID:</label>
+            <input type="text" id="ride_id" name="ride_id" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <a href="{{ url_for('rider.dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+</head>
+<body>
+    <h1>Add User</h1>
+    
+    <form method="post" action="{{ url_for('admin.add_user') }}">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <label for="email">Email-Id:</label>
+        <input type="email" name="email" required>
+        <label for="role">Role:</label>
+        <select name="role" required>
+            <option value="rider">Rider</option>
+            <option value="driver">Driver</option>
+        </select>
+        
+        <button type="submit">Add User</button>
+    </form>
+    
+    <a href="{{ url_for('admin.user_management') }}">Back to User Management</a>
+</body>
+</html>

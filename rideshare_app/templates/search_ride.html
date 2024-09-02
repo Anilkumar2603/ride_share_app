@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Ride</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search for a Ride</h1>
+        <form method="POST" action="{{ url_for('rider.search_ride') }}">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Search</button>
+        </form>
+        <a href="{{ url_for('rider.dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

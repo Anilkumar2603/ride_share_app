@@ -1,0 +1,41 @@
+<!-- trip_details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .trip-details-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="trip-details-container">
+        <h2>Trip Details</h2>
+        <p>Destination: {{ ride.destination }}</p>
+        <p>Date: {{ ride.date }}</p>
+        <p>Time: {{ ride.time }}</p>
+        <p>Seats Available: {{ ride.seats_available }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- post_ride.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Ride</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .post-ride-container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-ride-container">
+        <h2>Post a Ride</h2>
+        <form action="{{ url_for('driver.post_ride') }}" method="POST">
+            <input type="text" name="destination" placeholder="Destination" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="seats_available" placeholder="Available Seats" required>
+            <button type="submit">Post Ride</button>
+        </form>
+        
+    </div>
+</body>
+</html>
